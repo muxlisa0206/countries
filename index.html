@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    
+    <header class="shadow-[0px_2px_4px_0px_#0000000E] fixed z-1 w-full top-0 bg-white">
+        <div class="container mx-auto px-[20px] flex items-center justify-between py-[10px] h-[100px]">
+            <h1 class="text-[24px] text-[#111517] font-[800]">Where in the world?</h1>
+        </div>
+    </header>
+
+    <main>
+            <div class="mx-auto mt-[150px] max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="flex items-center justify-between">
+                    <div class="flex flex-col sm:flex-row items-center relative rounded-md flex-grow gap-3">
+                        <input
+                          id="search"
+                          type="text"
+                          placeholder="Search for a country"
+                          class="shadow-[0px_2px_9px_0px_#0000000E] bg-[#FFFFFF] rounded-[5px] px-4 py-4 w-full sm:max-w-[460px]"
+                        >
+                      
+                        <div class="search-cards hidden w-full sm:w-auto absolute sm:static top-[100%] mt-2 bg-white border-2 border-gray-300 rounded-[10px] p-[10px] max-h-[300px] overflow-y-auto">
+
+                        </div>
+                      </div>
+                    <select class="shadow-[0px_2px_9px_0px_#0000000E] bg-[#FFFFFF] rounded-[5px] px-4 py-4">
+                        <option value="Filter by region">Filter by region</option>
+                    </select>
+                </div>
+                <div id="countries" class="mt-6 flex flex-col gap-[10px] items-center sm:grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-[20px]">
+                 
+                </div>
+            </div>
+    </main>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/"></script>
+</body>
+</html>
